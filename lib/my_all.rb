@@ -1,5 +1,7 @@
 require 'pry'
 
 def my_all?(collection)
-  binding.pry
+  if collection = []
+    binding.pry
+  end
 end
