@@ -10,6 +10,9 @@ def my_all?(collection)
     end
     binding.pry
   else
-    #specify a collection
+    puts "Please specify a collection"
   end
+
+  block_return_values.include?(false) ? return false : return true
+
 end
