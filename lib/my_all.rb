@@ -8,10 +8,10 @@ def my_all?(collection)
       block_return_values << yield(collection[i])
       i += 1
     end
-    binding.pry
   else
     puts "Please specify a collection"
   end
+  binding.pry
 
   block_return_values.include?(false) ? return false : return true
 end
