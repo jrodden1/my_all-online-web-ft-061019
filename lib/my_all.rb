@@ -1,15 +1,15 @@
 require 'pry'
 
 def my_all?(collection)
+  block_return_values = []
   if collection != []
     i = 0
-    block_return_values = []
     while i < collection.length
       block_return_values << yield(collection[i])
       i += 1
     end
   else
-    puts "Please specify a collection"
+    block_return_values = []
   end
   binding.pry
 
