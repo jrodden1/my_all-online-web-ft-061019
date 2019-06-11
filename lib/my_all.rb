@@ -13,5 +13,5 @@ def my_all?(collection)
   end
   binding.pry
 
-  block_return_values.include?(false) ? return false : return true
+  block_return_values.include?(false) == true ? return false : return true
 end
